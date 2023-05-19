@@ -42,6 +42,15 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            Button(action: {
+                OneSignal.InAppMessages.addTrigger("TESTITY_TEST_TEST", withValue: "test")
+            }) {
+                Text("Present In-app Message")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .padding()
     }
