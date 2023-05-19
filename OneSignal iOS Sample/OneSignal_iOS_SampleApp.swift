@@ -44,8 +44,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleHa
     func onDidDismiss(_ message: OSInAppMessage) {
         print("IAM onDidDismiss \(message)")
     }
-    
-    func startLiveActivity() {
-        let attributes = OneSignalWidgetAtti
-    }
 }
