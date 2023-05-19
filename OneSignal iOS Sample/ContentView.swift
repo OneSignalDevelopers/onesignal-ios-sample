@@ -51,6 +51,16 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            
+            Button(action: {
+                OneSignal.LiveActivities.enter("activityId", withToken: "token")
+            }) {
+                Text("Start Live Activity")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .padding()
     }
