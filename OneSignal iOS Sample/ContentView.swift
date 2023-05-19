@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import OneSignalFramework
 
 struct ContentView: View {
     var body: some View {
@@ -14,6 +15,33 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button(action: {
+                    OneSignal.User.pushSubscription.optIn()
+            }) {
+                Text("Enable Push")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            Button(action: {
+                    OneSignal.User.pushSubscription.optOut()
+            }) {
+                Text("Disable Push")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            Button(action: {
+                    OneSignal.InAppMessages.addTrigger("show_push_permission_prompt", withValue: "1")
+            }) {
+                Text("Prompt Push Permission")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .padding()
     }
