@@ -7,9 +7,7 @@
 
 import SwiftUI
 import ActivityKit
-import OneSignalFramework
-import SampleWidgetExtensionExtension
-
+import OneSignalFrameworkWrapper
 
 struct ContentView: View {
     var body: some View {
@@ -63,11 +61,12 @@ struct ContentView: View {
             Button(action: {
                 let attributes =  SampleWidgetExtensionAttributes(numberOfPizzas: 4, totalAmount: "$45.43", orderNumber: "420")
                 let contentState = SampleWidgetExtensionAttributes.ContentState(driverName: "William", deliveryTimer: Date.now...Date())
+                let activityContent = ActivityContent(state: contentState, staleDate: Calendar.current.date(byAdding: .minute, value: 30, to: Date())!)
 
                 do {
-                     let activity = try Activity<SampleWidgetExtensionAttributes>.request(
+                    let activity = try Activity<SampleWidgetExtensionAttributes>.request(
                          attributes: attributes,
-                         contentState: contentState,
+                         content: activityContent,
                          pushType: .token)
 
                      Task {
