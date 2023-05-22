@@ -17,13 +17,17 @@
 		670113DA29E9D6D900D01DE9 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 670113D929E9D6D900D01DE9 /* OneSignalFramework */; };
 		67324DF529F5F81700886064 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
 		67324DF729F5F81700886064 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
-		67324DFA29F5F81700886064 /* OneSignal_iOS_Sample_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67324DF929F5F81700886064 /* OneSignal_iOS_Sample_WidgetBundle.swift */; };
-		67324DFC29F5F81700886064 /* OneSignal_iOS_Sample_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67324DFB29F5F81700886064 /* OneSignal_iOS_Sample_WidgetLiveActivity.swift */; };
-		67324DFE29F5F81700886064 /* OneSignal_iOS_Sample_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67324DFD29F5F81700886064 /* OneSignal_iOS_Sample_Widget.swift */; };
-		67324E0129F5F81800886064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67324E0029F5F81800886064 /* Assets.xcassets */; };
-		67324E0329F5F81800886064 /* OneSignal_iOS_Sample_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 67324DFF29F5F81700886064 /* OneSignal_iOS_Sample_Widget.intentdefinition */; };
-		67324E0429F5F81800886064 /* OneSignal_iOS_Sample_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 67324DFF29F5F81700886064 /* OneSignal_iOS_Sample_Widget.intentdefinition */; };
-		67324E0729F5F81800886064 /* OneSignal iOS Sample WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 67324DF229F5F81700886064 /* OneSignal iOS Sample WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		673A9B4C2A1C06C6000243D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
+		673A9B4D2A1C06C6000243D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
+		673A9B662A1C06F9000243D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
+		673A9B672A1C06F9000243D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
+		673A9B6A2A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */; };
+		673A9B6C2A1C06F9000243D0 /* LiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6B2A1C06F9000243D0 /* LiveActivity.swift */; };
+		673A9B6E2A1C06F9000243D0 /* SampleWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */; };
+		673A9B712A1C06FA000243D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673A9B702A1C06FA000243D0 /* Assets.xcassets */; };
+		673A9B732A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */; };
+		673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */; };
+		679958662A1C0A860006091F /* SampleWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +38,19 @@
 			remoteGlobalIDString = 670113C929E9AA8400D01DE9;
 			remoteInfo = OneSignalNotificationServiceExtension;
 		};
-		67324E0529F5F81800886064 /* PBXContainerItemProxy */ = {
+		673A9B7B2A1C088D000243D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 670113AD29E9A70700D01DE9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 67324DF129F5F81700886064;
-			remoteInfo = "OneSignal iOS Sample WidgetExtension";
+			remoteGlobalIDString = 673A9B642A1C06F9000243D0;
+			remoteInfo = SampleWidgetExtensionExtension;
+		};
+		679958672A1C0A860006091F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 670113AD29E9A70700D01DE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 673A9B642A1C06F9000243D0;
+			remoteInfo = SampleWidgetExtensionExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				67324E0729F5F81800886064 /* OneSignal iOS Sample WidgetExtension.appex in Embed Foundation Extensions */,
+				679958662A1C0A860006091F /* SampleWidgetExtensionExtension.appex in Embed Foundation Extensions */,
 				670113D129E9AA8400D01DE9 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -70,12 +81,14 @@
 		67324DF229F5F81700886064 /* OneSignal iOS Sample WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OneSignal iOS Sample WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67324DF429F5F81700886064 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		67324DF629F5F81700886064 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		67324DF929F5F81700886064 /* OneSignal_iOS_Sample_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignal_iOS_Sample_WidgetBundle.swift; sourceTree = "<group>"; };
-		67324DFB29F5F81700886064 /* OneSignal_iOS_Sample_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignal_iOS_Sample_WidgetLiveActivity.swift; sourceTree = "<group>"; };
-		67324DFD29F5F81700886064 /* OneSignal_iOS_Sample_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignal_iOS_Sample_Widget.swift; sourceTree = "<group>"; };
-		67324DFF29F5F81700886064 /* OneSignal_iOS_Sample_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OneSignal_iOS_Sample_Widget.intentdefinition; sourceTree = "<group>"; };
-		67324E0029F5F81800886064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		67324E0229F5F81800886064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		673A9B4B2A1C06C6000243D0 /* SampleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetExtensionBundle.swift; sourceTree = "<group>"; };
+		673A9B6B2A1C06F9000243D0 /* LiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivity.swift; sourceTree = "<group>"; };
+		673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetExtension.swift; sourceTree = "<group>"; };
+		673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SampleWidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		673A9B702A1C06FA000243D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		673A9B722A1C06FA000243D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67E3788E29EDD99200320FC3 /* OneSignal iOS Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OneSignal iOS Sample.entitlements"; sourceTree = "<group>"; };
 		67E3788F29EDDB4500320FC3 /* OneSignal-iOS-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OneSignal-iOS-Sample-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -106,6 +119,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		673A9B482A1C06C6000243D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673A9B4D2A1C06C6000243D0 /* SwiftUI.framework in Frameworks */,
+				673A9B4C2A1C06C6000243D0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673A9B622A1C06F9000243D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673A9B672A1C06F9000243D0 /* SwiftUI.framework in Frameworks */,
+				673A9B662A1C06F9000243D0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,7 +145,7 @@
 			children = (
 				670113B729E9A70700D01DE9 /* OneSignal iOS Sample */,
 				670113CB29E9AA8400D01DE9 /* OneSignalNotificationServiceExtension */,
-				67324DF829F5F81700886064 /* OneSignal iOS Sample Widget */,
+				673A9B682A1C06F9000243D0 /* SampleWidgetExtension */,
 				67324DF329F5F81700886064 /* Frameworks */,
 				670113B629E9A70700D01DE9 /* Products */,
 			);
@@ -126,6 +157,8 @@
 				670113B529E9A70700D01DE9 /* OneSignal iOS Sample.app */,
 				670113CA29E9AA8400D01DE9 /* OneSignalNotificationServiceExtension.appex */,
 				67324DF229F5F81700886064 /* OneSignal iOS Sample WidgetExtension.appex */,
+				673A9B4B2A1C06C6000243D0 /* SampleExtension.appex */,
+				673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,17 +202,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		67324DF829F5F81700886064 /* OneSignal iOS Sample Widget */ = {
+		673A9B682A1C06F9000243D0 /* SampleWidgetExtension */ = {
 			isa = PBXGroup;
 			children = (
-				67324DF929F5F81700886064 /* OneSignal_iOS_Sample_WidgetBundle.swift */,
-				67324DFB29F5F81700886064 /* OneSignal_iOS_Sample_WidgetLiveActivity.swift */,
-				67324DFD29F5F81700886064 /* OneSignal_iOS_Sample_Widget.swift */,
-				67324DFF29F5F81700886064 /* OneSignal_iOS_Sample_Widget.intentdefinition */,
-				67324E0029F5F81800886064 /* Assets.xcassets */,
-				67324E0229F5F81800886064 /* Info.plist */,
+				673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */,
+				673A9B6B2A1C06F9000243D0 /* LiveActivity.swift */,
+				673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */,
+				673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */,
+				673A9B702A1C06FA000243D0 /* Assets.xcassets */,
+				673A9B722A1C06FA000243D0 /* Info.plist */,
 			);
-			path = "OneSignal iOS Sample Widget";
+			path = SampleWidgetExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +231,8 @@
 			);
 			dependencies = (
 				670113D029E9AA8400D01DE9 /* PBXTargetDependency */,
-				67324E0629F5F81800886064 /* PBXTargetDependency */,
+				673A9B7C2A1C088D000243D0 /* PBXTargetDependency */,
+				679958682A1C0A860006091F /* PBXTargetDependency */,
 			);
 			name = "OneSignal iOS Sample";
 			packageProductDependencies = (
@@ -243,6 +277,40 @@
 			productReference = 67324DF229F5F81700886064 /* OneSignal iOS Sample WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		673A9B4A2A1C06C6000243D0 /* SampleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673A9B5E2A1C06C7000243D0 /* Build configuration list for PBXNativeTarget "SampleExtension" */;
+			buildPhases = (
+				673A9B472A1C06C6000243D0 /* Sources */,
+				673A9B482A1C06C6000243D0 /* Frameworks */,
+				673A9B492A1C06C6000243D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleExtension;
+			productName = SampleExtension;
+			productReference = 673A9B4B2A1C06C6000243D0 /* SampleExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		673A9B642A1C06F9000243D0 /* SampleWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673A9B782A1C06FA000243D0 /* Build configuration list for PBXNativeTarget "SampleWidgetExtensionExtension" */;
+			buildPhases = (
+				673A9B612A1C06F9000243D0 /* Sources */,
+				673A9B622A1C06F9000243D0 /* Frameworks */,
+				673A9B632A1C06F9000243D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleWidgetExtensionExtension;
+			productName = SampleWidgetExtensionExtension;
+			productReference = 673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,6 +328,12 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					67324DF129F5F81700886064 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					673A9B4A2A1C06C6000243D0 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					673A9B642A1C06F9000243D0 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -283,6 +357,8 @@
 				670113B429E9A70700D01DE9 /* OneSignal iOS Sample */,
 				670113C929E9AA8400D01DE9 /* OneSignalNotificationServiceExtension */,
 				67324DF129F5F81700886064 /* OneSignal iOS Sample WidgetExtension */,
+				673A9B4A2A1C06C6000243D0 /* SampleExtension */,
+				673A9B642A1C06F9000243D0 /* SampleWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +384,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67324E0129F5F81800886064 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673A9B492A1C06C6000243D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673A9B632A1C06F9000243D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673A9B712A1C06FA000243D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				670113BB29E9A70700D01DE9 /* ContentView.swift in Sources */,
-				67324E0429F5F81800886064 /* OneSignal_iOS_Sample_Widget.intentdefinition in Sources */,
+				673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */,
 				670113B929E9A70700D01DE9 /* OneSignal_iOS_SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,10 +427,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67324DFA29F5F81700886064 /* OneSignal_iOS_Sample_WidgetBundle.swift in Sources */,
-				67324DFE29F5F81700886064 /* OneSignal_iOS_Sample_Widget.swift in Sources */,
-				67324DFC29F5F81700886064 /* OneSignal_iOS_Sample_WidgetLiveActivity.swift in Sources */,
-				67324E0329F5F81800886064 /* OneSignal_iOS_Sample_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673A9B472A1C06C6000243D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673A9B612A1C06F9000243D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673A9B6C2A1C06F9000243D0 /* LiveActivity.swift in Sources */,
+				673A9B6A2A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift in Sources */,
+				673A9B732A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */,
+				673A9B6E2A1C06F9000243D0 /* SampleWidgetExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,10 +456,15 @@
 			target = 670113C929E9AA8400D01DE9 /* OneSignalNotificationServiceExtension */;
 			targetProxy = 670113CF29E9AA8400D01DE9 /* PBXContainerItemProxy */;
 		};
-		67324E0629F5F81800886064 /* PBXTargetDependency */ = {
+		673A9B7C2A1C088D000243D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67324DF129F5F81700886064 /* OneSignal iOS Sample WidgetExtension */;
-			targetProxy = 67324E0529F5F81800886064 /* PBXContainerItemProxy */;
+			target = 673A9B642A1C06F9000243D0 /* SampleWidgetExtensionExtension */;
+			targetProxy = 673A9B7B2A1C088D000243D0 /* PBXContainerItemProxy */;
+		};
+		679958682A1C0A860006091F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 673A9B642A1C06F9000243D0 /* SampleWidgetExtensionExtension */;
+			targetProxy = 679958672A1C0A860006091F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -604,7 +713,7 @@
 				DEVELOPMENT_TEAM = J3J28YJX9L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OneSignal iOS Sample Widget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "OneSignal iOS Sample Widget";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sample Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -612,7 +721,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.OneSignal-iOS-Sample.OneSignal-iOS-Sample-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.Sample.Sample-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -631,7 +740,7 @@
 				DEVELOPMENT_TEAM = J3J28YJX9L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OneSignal iOS Sample Widget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "OneSignal iOS Sample Widget";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sample Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -639,7 +748,115 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.OneSignal-iOS-Sample.OneSignal-iOS-Sample-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.Sample.Sample-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		673A9B5F2A1C06C7000243D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3J28YJX9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Sample;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.OneSignal-iOS-Sample.Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		673A9B602A1C06C7000243D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3J28YJX9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Sample;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.OneSignal-iOS-Sample.Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		673A9B792A1C06FA000243D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3J28YJX9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.OneSignal-iOS-Sample.SampleWidgetExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		673A9B7A2A1C06FA000243D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3J28YJX9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onesignal.devrel.ios-sample.OneSignal-iOS-Sample.SampleWidgetExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -683,6 +900,24 @@
 			buildConfigurations = (
 				67324E0829F5F81800886064 /* Debug */,
 				67324E0929F5F81800886064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673A9B5E2A1C06C7000243D0 /* Build configuration list for PBXNativeTarget "SampleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673A9B5F2A1C06C7000243D0 /* Debug */,
+				673A9B602A1C06C7000243D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673A9B782A1C06FA000243D0 /* Build configuration list for PBXNativeTarget "SampleWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673A9B792A1C06FA000243D0 /* Debug */,
+				673A9B7A2A1C06FA000243D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

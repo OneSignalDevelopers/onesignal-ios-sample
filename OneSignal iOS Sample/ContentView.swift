@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
+import ActivityKit
 import OneSignalFramework
+import SampleWidgetExtensionExtension
+
 
 struct ContentView: View {
     var body: some View {
@@ -43,7 +46,24 @@ struct ContentView: View {
                     .cornerRadius(10)
             }
             Button(action: {
-                OneSignal.InAppMessages.addTrigger("TESTITY_TEST_TEST", withValue: "test")
+//                let attributes = SampleWidgetExtensionAttributes(numberOfPizzas: 4, totalAmount: "$45.43", orderNumber: "420")
+//                let contentState = SampleWidgetExtensionAttributes.ContentState(driverName: "William", deliveryTimer: Date.now...Date())
+//
+//                do {
+//                     let activity = try Activity<SampleWidgetExtensionLiveActivity>.request(
+//                         attributes: attributes,
+//                         contentState: contentState,
+//                         pushType: .token)
+//
+//                     Task {
+//                         for await data in activity.pushTokenUpdates {
+//                             let myToken = data.map {String(format: "%02x", $0)}.joined()
+//                             OneSignal.InAppMessages.addTrigger("TESTITY_TEST_TEST", withValue: "test")
+//                         }
+//                     }
+//                 } catch (let error) {
+//                     print(error.localizedDescription)
+//                 }
             }) {
                 Text("Present In-app Message")
                     .padding()
