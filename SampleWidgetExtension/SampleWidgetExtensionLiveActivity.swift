@@ -9,19 +9,6 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct SampleWidgetExtensionAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var driverName: String
-        var deliveryTimer: ClosedRange<Date>
-    }
-
-    // Fixed non-changing properties about your activity go here!
-    var numberOfPizzas: Int
-    var totalAmount: String
-    var orderNumber: String
-}
-
 struct SampleWidgetExtensionLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: SampleWidgetExtensionAttributes.self) { context in
