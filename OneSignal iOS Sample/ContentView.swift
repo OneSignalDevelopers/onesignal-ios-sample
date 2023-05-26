@@ -14,7 +14,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("OneSignal iOS Sample")
             Button(action: {
                     OneSignal.User.pushSubscription.optIn()
             }) {
