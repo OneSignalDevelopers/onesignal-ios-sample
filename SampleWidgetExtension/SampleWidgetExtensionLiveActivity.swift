@@ -16,6 +16,7 @@ struct SampleWidgetExtensionLiveActivity: Widget {
             // banner on the Home Screen of devices that don't support the
             // Dynamic Island.
             // ...
+            Text("View Live Activity in the Dynamic Island on iPhone 14 Pro")
         } dynamicIsland: { context in
             // Create the presentations that appear in the Dynamic Island.
             DynamicIsland {
