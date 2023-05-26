@@ -1,8 +1,8 @@
 //
-//  OneSignal_iOS_Sample_Widget.swift
-//  OneSignal iOS Sample Widget
+//  SampleWidgetExtension.swift
+//  SampleWidgetExtension
 //
-//  Created by William Shepherd on 4/23/23.
+//  Created by William Shepherd on 5/22/23.
 //
 
 import WidgetKit
@@ -40,7 +40,7 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct OneSignal_iOS_Sample_WidgetEntryView : View {
+struct SampleWidgetExtensionEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -48,21 +48,21 @@ struct OneSignal_iOS_Sample_WidgetEntryView : View {
     }
 }
 
-struct OneSignal_iOS_Sample_Widget: Widget {
-    let kind: String = "OneSignal_iOS_Sample_Widget"
+struct SampleWidgetExtension: Widget {
+    let kind: String = "SampleWidgetExtension"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            OneSignal_iOS_Sample_WidgetEntryView(entry: entry)
+            SampleWidgetExtensionEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-struct OneSignal_iOS_Sample_Widget_Previews: PreviewProvider {
+struct SampleWidgetExtension_Previews: PreviewProvider {
     static var previews: some View {
-        OneSignal_iOS_Sample_WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        SampleWidgetExtensionEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
