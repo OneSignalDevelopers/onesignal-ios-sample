@@ -14,6 +14,7 @@
 		670113CD29E9AA8400D01DE9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670113CC29E9AA8400D01DE9 /* NotificationService.swift */; };
 		670113D829E9D6D900D01DE9 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 670113D729E9D6D900D01DE9 /* OneSignalExtension */; };
 		670113DA29E9D6D900D01DE9 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 670113D929E9D6D900D01DE9 /* OneSignalFramework */; };
+		6712AD762A1C2C8C005B176C /* SampleWidgetExtensionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */; };
 		673A9B662A1C06F9000243D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
 		673A9B672A1C06F9000243D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
 		673A9B6A2A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */; };
@@ -172,13 +173,13 @@
 		673A9B682A1C06F9000243D0 /* SampleWidgetExtension */ = {
 			isa = PBXGroup;
 			children = (
+				6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */,
 				673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */,
 				673A9B6B2A1C06F9000243D0 /* SampleWidgetExtensionLiveActivity.swift */,
 				673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */,
 				673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */,
 				673A9B702A1C06FA000243D0 /* Assets.xcassets */,
 				673A9B722A1C06FA000243D0 /* Info.plist */,
-				6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */,
 			);
 			path = SampleWidgetExtension;
 			sourceTree = "<group>";
@@ -322,6 +323,7 @@
 			files = (
 				670113BB29E9A70700D01DE9 /* ContentView.swift in Sources */,
 				673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */,
+				6712AD762A1C2C8C005B176C /* SampleWidgetExtensionAttributes.swift in Sources */,
 				670113B929E9A70700D01DE9 /* OneSignal_iOS_SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
