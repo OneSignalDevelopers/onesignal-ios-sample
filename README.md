@@ -37,8 +37,6 @@ Configure in-app messages to present to users on app launch.
 
 Please refer to the [OneSignal iOS SDK Setup](https://documentation.onesignal.com/v11.0/docs/ios-sdk-setup) for instructions to get started with **Push** & **In-app Messages** and the [OneSignal Live Activities Quickstart Guide](https://documentation.onesignal.com/v11.0/docs/live-activities-quickstart) to get started with Live Activies. 
 
-https://documentation.onesignal.com/v11.0/docs/ios-sdk-setup
-
 ## Other resources 📚
 
 * [Live Activity Project Setup Guide](https://documentation.onesignal.com/docs/how-to-send-a-live-activity)
