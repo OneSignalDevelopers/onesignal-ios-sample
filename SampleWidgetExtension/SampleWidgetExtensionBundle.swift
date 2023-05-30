@@ -12,6 +12,6 @@ import SwiftUI
 struct SampleWidgetExtensionBundle: WidgetBundle {
     var body: some Widget {
         SampleWidgetExtension()
-        SampleWidgetExtensionLiveActivity()
+        SportsLiveActivity()
     }
 }

@@ -11,9 +11,9 @@ import OneSignalFramework
 import SampleWidgetExtensionExtension
 
 struct ContentView: View {
-    @State private var activity: Activity<SampleWidgetExtensionAttributes>? = nil
+    @State private var activity: Activity<SportsLiveActivityAttributes>? = nil
     
-    let activityId = "Some_LA_ID"
+    let activityId = "SOME_LA_ID"
     
     var body: some View {
         VStack {
@@ -86,12 +86,13 @@ struct ContentView: View {
     }
     
     func startActivity() {
-        let attributes =  SampleWidgetExtensionAttributes(numberOfPizzas: 4, totalAmount: "$45.43", orderNumber: "420")
-        let contentState = SampleWidgetExtensionAttributes.ContentState(driverName: "William", deliveryTimer: Date.now...Date())
+        let future = Calendar.current.date(byAdding: .minute, value: (Int(15) ), to: Date())!
+        let attributes = SportsLiveActivityAttributes(timer: Date.now...future, imageLeft: "Knights", teamNameLeft: "Knights", imageRight: "Pirates", teamNameRight: "Pirates", gameName: "Western Conference Round 1")
+        let contentState = SportsLiveActivityAttributes.ContentState(quarter: 1, scoreLeft: 0, scoreRight: 0, bottomText: "The game has started!")
         let activityContent = ActivityContent(state: contentState, staleDate: Calendar.current.date(byAdding: .minute, value: 30, to: Date())!)
 
         do {
-            activity = try Activity<SampleWidgetExtensionAttributes>.request(
+            activity = try Activity<SportsLiveActivityAttributes>.request(
                  attributes: attributes,
                  content: activityContent,
                  pushType: .token)
