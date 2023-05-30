@@ -27,9 +27,13 @@ Configure in-app messages to present to users on app launch.
 
 #### In-app Message Push Permission Prompt
 
+Prompt user for push permission without using native prompt.
+
 <img src="./assets/permission-prompt-iam.png" alt="Push permission prompt in-app message" style="height: 400px;">
 
 #### Live Activity Sporting Event
+
+Present live information to user with Live Activities.
 
 <img src="./assets/live-activity.png" alt="Live activity for sporting event" style="height: 400px;">
 
