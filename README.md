@@ -58,7 +58,3 @@ Get in touch with us or learn more about OneSignal through the channels below.
 - [Read the OneSignal Blog](https://onesignal.com/blog/) for the latest announcements, tutorials, in-depth articles & more.
 - [Subscribe to us on YouTube](https://www.youtube.com/channel/UCe63d5EDQsSkOov-bIE_8Aw/featured) for walkthroughs, courses, talks, workshops & more.
 - [Follow us on Twitch](https://www.twitch.tv/onesignaldevelopers) for live streams, office hours, support & more.
-
-## Show your support
-
-Give a ⭐️ if this project helped you, and watch this repo to stay up to date.
