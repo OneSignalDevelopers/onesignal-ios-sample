@@ -1,3 +1,6 @@
+## Certs
 *.cer
 *.certSigningRequest
 
+## User settings
+xcuserdata/

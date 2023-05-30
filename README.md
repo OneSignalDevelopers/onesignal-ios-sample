@@ -19,9 +19,33 @@ OneSignal makes engaging customers simple and is the fastest, most reliable serv
 
 This project demonstrates how to integrate OneSignal into an iOS app built with SwiftUI to handle your messaging needs, including push notifications, SMS text messages, email, and in-app messaging. Feel free to use this sample as a reference for your own iOS integration.
 
+### In-app Message App Launch
+
+Configure in-app messages to present to users on app launch.
+
+<img src="./assets/launch-iam.png" alt="In-app Message app launch" style="height: 400px;">
+
+### In-app Message Push Permission Prompt
+
+Prompt user for push permission without using native prompt.
+
+<img src="./assets/permission-prompt-iam.png" alt="Push permission prompt in-app message" style="height: 400px;">
+
+### Live Activity Sporting Event
+
+Present live information to user with Live Activities.
+
+<img src="./assets/live-activity.png" alt="Live activity for sporting event" style="height: 400px;">
+
 ## 🚦 Getting started
 
-Todo
+Please refer to the [OneSignal iOS SDK Setup](https://documentation.onesignal.com/v11.0/docs/ios-sdk-setup) for instructions to get started with **Push** & **In-app Messages** and the [OneSignal Live Activities Quickstart Guide](https://documentation.onesignal.com/v11.0/docs/live-activities-quickstart) to get started with **Live Activies**. 
+
+## Other resources 📚
+
+* [Live Activity Project Setup Guide](https://documentation.onesignal.com/docs/how-to-send-a-live-activity)
+* [Live Activities Channel](https://documentation.onesignal.com/docs/live-activities)
+* [Permission Prompting](https://documentation.onesignal.com/docs/permission-prompting)
 
 ## ❤️ Developer Community
 
