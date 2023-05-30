@@ -14,17 +14,16 @@
 		670113CD29E9AA8400D01DE9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670113CC29E9AA8400D01DE9 /* NotificationService.swift */; };
 		670113D829E9D6D900D01DE9 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 670113D729E9D6D900D01DE9 /* OneSignalExtension */; };
 		670113DA29E9D6D900D01DE9 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 670113D929E9D6D900D01DE9 /* OneSignalFramework */; };
-		6712AD762A1C2C8C005B176C /* SampleWidgetExtensionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */; };
 		673A9B662A1C06F9000243D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
 		673A9B672A1C06F9000243D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
 		673A9B6A2A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */; };
-		673A9B6C2A1C06F9000243D0 /* SampleWidgetExtensionLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6B2A1C06F9000243D0 /* SampleWidgetExtensionLiveActivity.swift */; };
 		673A9B6E2A1C06F9000243D0 /* SampleWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */; };
 		673A9B712A1C06FA000243D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673A9B702A1C06FA000243D0 /* Assets.xcassets */; };
 		673A9B732A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */; };
 		673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */; };
+		675089842A2697E600579634 /* SportsScoreLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675089832A2697E600579634 /* SportsScoreLiveActivity.swift */; };
+		675089852A26986C00579634 /* SportsScoreLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675089832A2697E600579634 /* SportsScoreLiveActivity.swift */; };
 		679958692A1C0DAC0006091F /* SampleWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6799586E2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,12 +70,11 @@
 		67324DF629F5F81700886064 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetExtensionBundle.swift; sourceTree = "<group>"; };
-		673A9B6B2A1C06F9000243D0 /* SampleWidgetExtensionLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetExtensionLiveActivity.swift; sourceTree = "<group>"; };
 		673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetExtension.swift; sourceTree = "<group>"; };
 		673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SampleWidgetExtension.intentdefinition; sourceTree = "<group>"; };
 		673A9B702A1C06FA000243D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		673A9B722A1C06FA000243D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetExtensionAttributes.swift; sourceTree = "<group>"; };
+		675089832A2697E600579634 /* SportsScoreLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScoreLiveActivity.swift; sourceTree = "<group>"; };
 		67E3788E29EDD99200320FC3 /* OneSignal iOS Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OneSignal iOS Sample.entitlements"; sourceTree = "<group>"; };
 		67E3788F29EDDB4500320FC3 /* OneSignal-iOS-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OneSignal-iOS-Sample-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -173,13 +171,12 @@
 		673A9B682A1C06F9000243D0 /* SampleWidgetExtension */ = {
 			isa = PBXGroup;
 			children = (
-				6799586D2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift */,
 				673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */,
-				673A9B6B2A1C06F9000243D0 /* SampleWidgetExtensionLiveActivity.swift */,
 				673A9B6D2A1C06F9000243D0 /* SampleWidgetExtension.swift */,
 				673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */,
 				673A9B702A1C06FA000243D0 /* Assets.xcassets */,
 				673A9B722A1C06FA000243D0 /* Info.plist */,
+				675089832A2697E600579634 /* SportsScoreLiveActivity.swift */,
 			);
 			path = SampleWidgetExtension;
 			sourceTree = "<group>";
@@ -323,8 +320,8 @@
 			files = (
 				670113BB29E9A70700D01DE9 /* ContentView.swift in Sources */,
 				673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */,
-				6712AD762A1C2C8C005B176C /* SampleWidgetExtensionAttributes.swift in Sources */,
 				670113B929E9A70700D01DE9 /* OneSignal_iOS_SampleApp.swift in Sources */,
+				675089842A2697E600579634 /* SportsScoreLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673A9B6C2A1C06F9000243D0 /* SampleWidgetExtensionLiveActivity.swift in Sources */,
 				673A9B6A2A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift in Sources */,
+				675089852A26986C00579634 /* SportsScoreLiveActivity.swift in Sources */,
 				673A9B732A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */,
-				6799586E2A1C146B0006091F /* SampleWidgetExtensionAttributes.swift in Sources */,
 				673A9B6E2A1C06F9000243D0 /* SampleWidgetExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
