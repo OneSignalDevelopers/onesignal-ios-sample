@@ -21,6 +21,27 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("OneSignal iOS Sample")
+            
+            Button(action: {
+                OneSignal.login("THE_USER'S_ID_IN_YOUR_BACKEND")
+            }) {
+                Text("Login")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            
+            
+            Button(action: {
+                OneSignal.logout()
+            }) {
+                Text("Logout")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
           
             Button(action: {
                 OneSignal.User.pushSubscription.optIn()
