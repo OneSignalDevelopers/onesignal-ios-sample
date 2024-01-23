@@ -67,9 +67,6 @@ struct LiveActivityLiveActivity: Widget {
                     .background(Color(hex: "#04123B"))
                     .foregroundColor(.white)
                     
-                    
-                   
-                    
                     HStack {
                         Image("fifa_logo") // Replace with your actual image asset name
                             .resizable()
@@ -77,7 +74,6 @@ struct LiveActivityLiveActivity: Widget {
                             .padding([.leading], 20)
                             .padding([.top, .bottom], 2)
                             .frame(width: 15, height: 20, alignment: .topLeading)
-                            .border(.purple)
                             .background(.clear)
                             .padding(EdgeInsets())
                         
@@ -90,7 +86,6 @@ struct LiveActivityLiveActivity: Widget {
                             .padding([.trailing], 20)
                             .padding([.top, .bottom], 2)
                             .frame(width: 15, height: 20, alignment: .topTrailing)
-                            .border(.red)
                             .background(.clear)
                             .padding(EdgeInsets())
                     }
