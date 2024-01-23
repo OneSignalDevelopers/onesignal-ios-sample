@@ -8,19 +8,20 @@
 import SwiftUI
 import ActivityKit
 import OneSignalFramework
-import SampleWidgetExtensionExtension
 
-struct ContentView: View {
-    @State private var activity: Activity<SportsLiveActivityAttributes>? = nil
+struct OSControlBoardView: View {
+    @State private var activity: Activity<LiveActivityAttributes>? = nil
     
-    let activityId = "SOME_LA_ID"
+    let activityId = "live_activity_id"
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
+            
             Text("OneSignal iOS Sample")
+                .padding([.bottom], 40)
             
             Button(action: {
                 OneSignal.login("THE_USER'S_ID_IN_YOUR_BACKEND")
@@ -107,13 +108,12 @@ struct ContentView: View {
     }
     
     func startActivity() {
-        let future = Calendar.current.date(byAdding: .minute, value: (Int(15) ), to: Date())!
-        let attributes = SportsLiveActivityAttributes(timer: Date.now...future, imageLeft: "Knights", teamNameLeft: "Knights", imageRight: "Pirates", teamNameRight: "Pirates", gameName: "Western Conference Round 1")
-        let contentState = SportsLiveActivityAttributes.ContentState(quarter: 1, scoreLeft: 0, scoreRight: 0, bottomText: "The game has started!")
+        let attributes = LiveActivityAttributes(name: "Switzerland vs. Germany", homeTeam: "Switzerland", awayTeam: "Germany", fifaLogo: "fifa_logo", sponsorLogo: "cocacola_logo")
+        let contentState = LiveActivityAttributes.ContentState(homeScore: 6, awayScore: 1)
         let activityContent = ActivityContent(state: contentState, staleDate: Calendar.current.date(byAdding: .minute, value: 30, to: Date())!)
 
         do {
-            activity = try Activity<SportsLiveActivityAttributes>.request(
+            activity = try Activity<LiveActivityAttributes>.request(
                  attributes: attributes,
                  content: activityContent,
                  pushType: .token)
@@ -138,6 +138,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        OSControlBoardView()
     }
 }

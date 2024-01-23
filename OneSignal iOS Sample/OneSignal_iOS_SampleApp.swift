@@ -15,7 +15,7 @@ struct OneSignal_iOS_SampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OSControlBoardView()
         }
     }
 }
@@ -24,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleLi
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         OneSignal.Debug.setLogLevel(.LL_VERBOSE)
         OneSignal.initialize("202d4f61-1ca9-42df-9d36-bb17d8613abf", withLaunchOptions: launchOptions)
-        
-        print("Is it paused", OneSignal.InAppMessages.paused)
     
         return true
     }
