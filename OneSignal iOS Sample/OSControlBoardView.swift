@@ -24,7 +24,7 @@ struct OSControlBoardView: View {
                 .padding([.bottom], 40)
             
             Button(action: {
-                OneSignal.login("THE_USER'S_ID_IN_YOUR_BACKEND")
+                OneSignal.login("iamwillshepherd@kronos.local")
             }) {
                 Text("Login")
                     .padding()

@@ -8,6 +8,7 @@
 import SwiftUI
 import ActivityKit
 import OneSignalFramework
+import OneSignalLiveActivities
 
 @main
 struct OneSignal_iOS_SampleApp: App {
