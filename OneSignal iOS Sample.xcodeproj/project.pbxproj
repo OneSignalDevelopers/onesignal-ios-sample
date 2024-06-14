@@ -21,12 +21,11 @@
 		673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */; };
 		675089842A2697E600579634 /* SportsScoreLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675089832A2697E600579634 /* SportsScoreLiveActivity.swift */; };
 		675089852A26986C00579634 /* SportsScoreLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675089832A2697E600579634 /* SportsScoreLiveActivity.swift */; };
+		675CA1C42C1CE00700EA9907 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 675CA1C32C1CE00700EA9907 /* OneSignalExtension */; };
+		675CA1C62C1CE00700EA9907 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 675CA1C52C1CE00700EA9907 /* OneSignalFramework */; };
+		675CA1C82C1CE00700EA9907 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 675CA1C72C1CE00700EA9907 /* OneSignalInAppMessages */; };
 		6779EB1A2B5F5EFE0061F28B /* LiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD52B5E509900821C94 /* LiveActivityLiveActivity.swift */; };
 		679958692A1C0DAC0006091F /* SampleWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		67DA2FC42B5E4F8D00821C94 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 67DA2FC32B5E4F8D00821C94 /* OneSignalExtension */; };
-		67DA2FC62B5E4F8D00821C94 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 67DA2FC52B5E4F8D00821C94 /* OneSignalFramework */; };
-		67DA2FC82B5E4F8D00821C94 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 67DA2FC72B5E4F8D00821C94 /* OneSignalInAppMessages */; };
-		67DA2FCA2B5E4F8D00821C94 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 67DA2FC92B5E4F8D00821C94 /* OneSignalLocation */; };
 		67DA2FD02B5E509900821C94 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
 		67DA2FD12B5E509900821C94 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
 		67DA2FD42B5E509900821C94 /* LiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD32B5E509900821C94 /* LiveActivityBundle.swift */; };
@@ -108,9 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DA2FC82B5E4F8D00821C94 /* OneSignalInAppMessages in Frameworks */,
-				67DA2FCA2B5E4F8D00821C94 /* OneSignalLocation in Frameworks */,
-				67DA2FC62B5E4F8D00821C94 /* OneSignalFramework in Frameworks */,
+				675CA1C82C1CE00700EA9907 /* OneSignalInAppMessages in Frameworks */,
+				675CA1C62C1CE00700EA9907 /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DA2FC42B5E4F8D00821C94 /* OneSignalExtension in Frameworks */,
+				675CA1C42C1CE00700EA9907 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +249,8 @@
 			);
 			name = "OneSignal iOS Sample";
 			packageProductDependencies = (
-				67DA2FC52B5E4F8D00821C94 /* OneSignalFramework */,
-				67DA2FC72B5E4F8D00821C94 /* OneSignalInAppMessages */,
-				67DA2FC92B5E4F8D00821C94 /* OneSignalLocation */,
+				675CA1C52C1CE00700EA9907 /* OneSignalFramework */,
+				675CA1C72C1CE00700EA9907 /* OneSignalInAppMessages */,
 			);
 			productName = "OneSignal iOS Sample";
 			productReference = 670113B529E9A70700D01DE9 /* OneSignal iOS Sample.app */;
@@ -273,7 +270,7 @@
 			);
 			name = OneSignalNotificationServiceExtension;
 			packageProductDependencies = (
-				67DA2FC32B5E4F8D00821C94 /* OneSignalExtension */,
+				675CA1C32C1CE00700EA9907 /* OneSignalExtension */,
 			);
 			productName = OneSignalNotificationServiceExtension;
 			productReference = 670113CA29E9AA8400D01DE9 /* OneSignalNotificationServiceExtension.appex */;
@@ -347,7 +344,7 @@
 			);
 			mainGroup = 670113AC29E9A70700D01DE9;
 			packageReferences = (
-				67DA2FC22B5E4F8D00821C94 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */,
+				675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */,
 			);
 			productRefGroup = 670113B629E9A70700D01DE9 /* Products */;
 			projectDirPath = "";
@@ -863,36 +860,31 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		67DA2FC22B5E4F8D00821C94 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */ = {
+		675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onesignal/onesignal-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.0;
+				minimumVersion = 5.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		67DA2FC32B5E4F8D00821C94 /* OneSignalExtension */ = {
+		675CA1C32C1CE00700EA9907 /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 67DA2FC22B5E4F8D00821C94 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			package = 675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
 			productName = OneSignalExtension;
 		};
-		67DA2FC52B5E4F8D00821C94 /* OneSignalFramework */ = {
+		675CA1C52C1CE00700EA9907 /* OneSignalFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 67DA2FC22B5E4F8D00821C94 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			package = 675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
 			productName = OneSignalFramework;
 		};
-		67DA2FC72B5E4F8D00821C94 /* OneSignalInAppMessages */ = {
+		675CA1C72C1CE00700EA9907 /* OneSignalInAppMessages */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 67DA2FC22B5E4F8D00821C94 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			package = 675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
 			productName = OneSignalInAppMessages;
-		};
-		67DA2FC92B5E4F8D00821C94 /* OneSignalLocation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 67DA2FC22B5E4F8D00821C94 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
-			productName = OneSignalLocation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
