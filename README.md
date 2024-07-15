@@ -39,7 +39,7 @@ Present live information to user with Live Activities.
 
 ## 🚦 Getting started
 
-Please refer to the [OneSignal iOS SDK Setup](https://documentation.onesignal.com/v11.0/docs/ios-sdk-setup) for instructions to get started with **Push** & **In-app Messages** and the [OneSignal Live Activities Quickstart Guide](https://documentation.onesignal.com/v11.0/docs/live-activities-quickstart) to get started with **Live Activies**. 
+Please refer to the [OneSignal iOS SDK Setup](https://documentation.onesignal.com/docs/ios-sdk-setup) for instructions to get started with **Push** & **In-app Messages** and the [OneSignal Live Activities Quickstart Guide](https://documentation.onesignal.com/docs/live-activities-quickstart) to get started with **Live Activies**. 
 
 ## Other resources 📚
 
