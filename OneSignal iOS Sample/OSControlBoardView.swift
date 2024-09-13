@@ -10,134 +10,83 @@ import ActivityKit
 import OneSignalFramework
 
 struct OSControlBoardView: View {
-    @State private var activity: Activity<LiveActivityAttributes>? = nil
-    
-    let activityId = "live_activity_id"
+    @EnvironmentObject var vm: OSControlBoardViewModel
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            
-            Text("OneSignal iOS Sample")
-                .padding([.bottom], 40)
-            
-            Button(action: {
-                OneSignal.login("iamwillshepherd@kronos.local")
-            }) {
-                Text("Login")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
-            
-            Button(action: {
-                OneSignal.logout()
-            }) {
-                Text("Logout")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-          
-            Button(action: {
-                OneSignal.User.pushSubscription.optIn()
-            }) {
-                Text("Enable Push")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
-            Button(action: {
-                OneSignal.User.pushSubscription.optOut()
-            }) {
-                Text("Disable Push")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
-            Button(action: {
-                OneSignal.InAppMessages.addTrigger("show_push_permission_prompt", withValue: "1")
-            }) {
-                Text("Prompt Push Permission")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
-            Button(action: {
-                OneSignal.InAppMessages.addTrigger("TESTITY_TEST_TEST", withValue: "test")
-            }) {
-                Text("Present In-app Message")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
-            Button(action: {
-               startActivity()
-            }) {
-                Text("Start Live Activity")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
-            Button(action: {
-               stopActivity()
-            }) {
-                Text("End Live Activity")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-        }
-        .padding()
-    }
-    
-    func startActivity() {
-        let attributes = LiveActivityAttributes(name: "Switzerland vs. Germany", homeTeam: "Switzerland", awayTeam: "Germany", fifaLogo: "fifa_logo", sponsorLogo: "cocacola_logo")
-        let contentState = LiveActivityAttributes.ContentState(homeScore: 6, awayScore: 1)
-        let activityContent = ActivityContent(state: contentState, staleDate: Calendar.current.date(byAdding: .minute, value: 30, to: Date())!)
+        NavigationView {
+            VStack(spacing: 20) {
+                Image(systemName: "bell.circle.fill")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                    .padding(.top, 40)
 
-        do {
-            activity = try Activity<LiveActivityAttributes>.request(
-                 attributes: attributes,
-                 content: activityContent,
-                 pushType: .token)
+                Text("OneSignal iOS Sample")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 20)
+
+                VStack(spacing: 15) {
+                    Group {
+                        Text(vm.onesignalId)
+                        Text(vm.externalId)
+                    }
+                    
+                    ActionButton(title: vm.loginBtn.text, action: vm.loginBtn.action)
             
-            Task {
-                for await data in activity!.pushTokenUpdates {
-                    let token = data.map {String(format: "%02x", $0)}.joined()
-                    print("Live Activity Push Token: ", token)
-                    OneSignal.LiveActivities.enter(activityId, withToken: token)
+                    ActionButton(title: vm.requestPushPermissionBtn.text, action: vm.requestPushPermissionBtn.action)
+                            .disabled(vm.isPushEnabled)
+
+                    ActionButton(title: "Soft Prompt Push Permission", action: {
+                        vm.presentPushPermissionSoftPrompt()
+                    }).disabled(vm.isPushEnabled)
+                    
+                    ActionButton(title: vm.subscribePushBtn.text, action: vm.subscribePushBtn.action)
+                    
+ 
+                    ActionButton(title: "Present In-app Message", action: {
+                        vm.presentIAM()
+                    })
+
+                    ActionButton(title: vm.startLiveActivityBtn.text, action: vm.startLiveActivityBtn.action)
+
+                    ActionButton(title: "Show Preference Center", action: {
+                        vm.presentPreferenceCenter()
+                    }, buttonColor: .orange)
                 }
-            }
-         } catch (let error) {
-             print(error.localizedDescription)
-         }
-    }
-    
-    func stopActivity() {
-        OneSignal.LiveActivities.exit(activityId)
-    }
 
+                Spacer()
+            }
+            .navigationTitle("Control Board")
+            .navigationBarTitleDisplayMode(.inline)
+            .padding()
+        }
+    }
 }
 
+struct ActionButton: View {
+    let title: String
+    let action: () -> Void
+    var buttonColor: Color = .blue
+
+    var body: some View {
+        Button(action: action) {
+            Text(title)
+                .font(.body)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(buttonColor)
+                .foregroundColor(.white)
+                .cornerRadius(8)
+        }
+        .padding(.horizontal)
+        .buttonStyle(PlainButtonStyle())
+    }
+}
+
+
 struct ContentView_Previews: PreviewProvider {
+    static let previewVm = OSControlBoardViewModel()
     static var previews: some View {
-        OSControlBoardView()
+        OSControlBoardView().environmentObject(previewVm)
     }
 }

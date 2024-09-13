@@ -17,24 +17,38 @@ struct OneSignal_iOS_SampleApp: App {
     var body: some Scene {
         WindowGroup {
             OSControlBoardView()
+                .environmentObject(appDelegate.vm!)
         }
     }
 }
 
-class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleListener {
+class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleListener, OSNotificationPermissionObserver  {
+    var vm: OSControlBoardViewModel?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        OneSignal.Debug.setLogLevel(.LL_VERBOSE)
+//        OneSignal.Debug.setLogLevel(.LL_VERBOSE)
         OneSignal.initialize("202d4f61-1ca9-42df-9d36-bb17d8613abf", withLaunchOptions: launchOptions)
-        
+          
+        vm = OSControlBoardViewModel()
+        // Setup pushToStartToken if iOS version supports it
         if #available(iOS 17.2, *) {
-            Task {
-                for try await data in Activity<LiveActivityAttributes>.pushToStartTokenUpdates {
-                    let token = data.map {String(format: "%02x", $0)}.joined()
-                    OneSignal.LiveActivities.setPushToStartToken(LiveActivityAttributes.self, withToken: token)
-                }
-            }
+            vm?.setupPushToStartToken()
         }
+        
+        OneSignal.Notifications.addPermissionObserver(self)
+        OneSignal.User.addObserver(vm!)
+        OneSignal.User.pushSubscription.addObserver(vm!)
     
         return true
     }
+    
+    func onNotificationPermissionDidChange(_ permission: Bool) {
+        print("#PUSH_PERMISSION_CHANGED")
+        print("Permission:: ", permission)
+    
+        DispatchQueue.main.async {
+            self.vm?.isPushEnabled = permission
+        }
+    }
+
 }

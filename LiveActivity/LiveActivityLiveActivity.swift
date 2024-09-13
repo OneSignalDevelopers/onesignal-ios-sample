@@ -8,6 +8,7 @@
 import ActivityKit
 import WidgetKit
 import SwiftUI
+import OneSignalLiveActivities
 
 struct LiveActivityAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
@@ -23,7 +24,6 @@ struct LiveActivityAttributes: ActivityAttributes {
     var awayTeam: String
     var fifaLogo: String
     var sponsorLogo: String
-
 }
 
 struct LiveActivityLiveActivity: Widget {
