@@ -22,7 +22,7 @@ struct OneSignal_iOS_SampleApp: App {
     }
 }
 
-class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleListener, OSNotificationPermissionObserver  {
+class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleListener, OSNotificationPermissionObserver, OSUserStateObserver, OSPushSubscriptionObserver  {
     var vm: OSControlBoardViewModel?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
@@ -36,8 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleLi
         }
         
         OneSignal.Notifications.addPermissionObserver(self)
-        OneSignal.User.addObserver(vm!)
-        OneSignal.User.pushSubscription.addObserver(vm!)
+        OneSignal.User.addObserver(self)
+        OneSignal.User.pushSubscription.addObserver(self)
     
         return true
     }
@@ -48,6 +48,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleLi
     
         DispatchQueue.main.async {
             self.vm?.isPushEnabled = permission
+        }
+    }
+    
+    func onPushSubscriptionDidChange(state: OSPushSubscriptionChangedState) {
+        print("#PUSH_SUBSCRIPTION_CHANGED")
+        print("State:: ", state.jsonRepresentation())
+        
+        DispatchQueue.main.async {
+            self.vm?.isSubscribed = state.current.optedIn
+        }
+    }
+    
+    func onUserStateDidChange(state: OneSignalUser.OSUserChangedState) {
+        print("#USER_CHANGED")
+        print("OneSignal ID:: ", state.current.onesignalId ?? "Unknown OneSignal ID")
+        print("External ID:: ", state.current.externalId ?? "Anonymous User")
+        print("State:: ", state.current.jsonRepresentation())
+        
+        DispatchQueue.main.async {
+            self.vm?.isLoggedIn = state.current.externalId != nil
         }
     }
 

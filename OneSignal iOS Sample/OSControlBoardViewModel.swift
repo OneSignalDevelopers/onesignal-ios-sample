@@ -15,7 +15,7 @@ struct ButtonAction {
     let action: () -> Void
 }
 
-class OSControlBoardViewModel: ObservableObject, OSUserStateObserver, OSPushSubscriptionObserver {
+class OSControlBoardViewModel: ObservableObject {
     @Published var isPushEnabled: Bool
     @Published var isSubscribed: Bool
     @Published var isLoggedIn: Bool
@@ -156,27 +156,6 @@ class OSControlBoardViewModel: ObservableObject, OSUserStateObserver, OSPushSubs
         OneSignal.LiveActivities.exit(activityId)
         DispatchQueue.main.async {
             self.isDeviceLiveActivityRunning = false
-        }
-    }
-    
-    func onUserStateDidChange(state: OneSignalUser.OSUserChangedState) {
-        print("#USER_CHANGED")
-        print("OneSignal ID:: ", state.current.onesignalId ?? "Unknown OneSignal ID")
-        print("External ID:: ", state.current.externalId ?? "Anonymous User")
-        print("State:: ", state.current.jsonRepresentation())
-        
-        DispatchQueue.main.async {
-            self.isLoggedIn = state.current.externalId != nil
-        }
-    }
-    
-
-    func onPushSubscriptionDidChange(state: OSPushSubscriptionChangedState) {
-        print("#PUSH_SUBSCRIPTION_CHANGED")
-        print("State:: ", state.jsonRepresentation())
-        
-        DispatchQueue.main.async {
-            self.isSubscribed = state.current.optedIn
         }
     }
 }
