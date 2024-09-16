@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSInAppMessageLifecycleLi
         OneSignal.initialize("202d4f61-1ca9-42df-9d36-bb17d8613abf", withLaunchOptions: launchOptions)
           
         vm = OSControlBoardViewModel()
-        // Setup pushToStartToken if iOS version supports it
+//        Setup pushToStartToken if iOS version supports it
         if #available(iOS 17.2, *) {
-            vm?.setupPushToStartToken()
+            vm?.setupFIFALiveActivityPushToStart()
         }
         
         OneSignal.Notifications.addPermissionObserver(self)

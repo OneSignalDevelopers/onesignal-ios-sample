@@ -10,12 +10,11 @@ import WidgetKit
 import SwiftUI
 import OneSignalLiveActivities
 
-struct LiveActivityAttributes: ActivityAttributes {
+struct FIFALiveActivityAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
         var homeScore: Int
         var awayScore: Int
-
     }
 
     // Fixed non-changing properties about your activity go here!
@@ -26,9 +25,9 @@ struct LiveActivityAttributes: ActivityAttributes {
     var sponsorLogo: String
 }
 
-struct LiveActivityLiveActivity: Widget {
+struct FIFALiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: LiveActivityAttributes.self) { context in
+        ActivityConfiguration(for: FIFALiveActivityAttributes.self) { context in
             // Lock screen/banner UI goes here
             ZStack {
                 VStack {
@@ -158,22 +157,22 @@ extension Color {
     }
 }
 
-extension LiveActivityAttributes {
-    fileprivate static var preview: LiveActivityAttributes {
-        LiveActivityAttributes(name: "Switzerland vs. Germany", homeTeam: "Switzerland", awayTeam: "Germany", fifaLogo: "fifa_logo", sponsorLogo: "cocacola_logo")
+extension FIFALiveActivityAttributes {
+    fileprivate static var preview: FIFALiveActivityAttributes {
+        FIFALiveActivityAttributes(name: "Switzerland vs. Germany", homeTeam: "Switzerland", awayTeam: "Germany", fifaLogo: "fifa_logo", sponsorLogo: "cocacola_logo")
     }
 }
 
-extension LiveActivityAttributes.ContentState {
-    fileprivate static var smiley: LiveActivityAttributes.ContentState {
-        LiveActivityAttributes.ContentState(homeScore: 6, awayScore: 1)
+extension FIFALiveActivityAttributes.ContentState {
+    fileprivate static var smiley: FIFALiveActivityAttributes.ContentState {
+        FIFALiveActivityAttributes.ContentState(homeScore: 6, awayScore: 1)
      }
      
 }
 
-#Preview("Expanded Dynamic Island", as: ActivityPreviewViewKind.dynamicIsland(.expanded) , using: LiveActivityAttributes.preview) {
-   LiveActivityLiveActivity()
+#Preview("Expanded Dynamic Island", as: ActivityPreviewViewKind.dynamicIsland(.expanded) , using: FIFALiveActivityAttributes.preview) {
+   FIFALiveActivity()
 } contentStates: {
-    LiveActivityAttributes.ContentState.smiley
+    FIFALiveActivityAttributes.ContentState.smiley
 
 }

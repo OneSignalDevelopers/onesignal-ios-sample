@@ -31,23 +31,24 @@ struct OSControlBoardView: View {
                         Text(vm.externalId)
                     }
                     
-                    ActionButton(title: vm.loginBtn.text, action: vm.loginBtn.action)
+                    ActionButton(title: vm.LoginAction.text, action: vm.LoginAction.action)
             
-                    ActionButton(title: vm.requestPushPermissionBtn.text, action: vm.requestPushPermissionBtn.action)
-                            .disabled(vm.isPushEnabled)
+                    ActionButton(title: vm.RequestPushPermissionAction.text, action: vm.RequestPushPermissionAction.action)
+                        .disabled(!vm.canRequestPushPermission)
 
                     ActionButton(title: "Soft Prompt Push Permission", action: {
                         vm.presentPushPermissionSoftPrompt()
                     }).disabled(vm.isPushEnabled)
                     
-                    ActionButton(title: vm.subscribePushBtn.text, action: vm.subscribePushBtn.action)
+                    ActionButton(title: vm.subscribeToPushAction.text, action: vm.subscribeToPushAction.action)
                     
  
                     ActionButton(title: "Present In-app Message", action: {
                         vm.presentIAM()
                     })
 
-                    ActionButton(title: vm.startLiveActivityBtn.text, action: vm.startLiveActivityBtn.action)
+//                    ActionButton(title: vm.FIFALiveActivityAction.text, action: vm.FIFALiveActivityAction.action)
+                    ActionButton(title: vm.SimpleLiveActivityAction.text, action: vm.SimpleLiveActivityAction.action)
 
                     ActionButton(title: "Show Preference Center", action: {
                         vm.presentPreferenceCenter()
