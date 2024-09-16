@@ -10,7 +10,9 @@ import SwiftUI
 
 @main
 struct LiveActivityBundle: WidgetBundle {
+    
     var body: some Widget {
-        LiveActivityLiveActivity()
+        FIFALiveActivity()
+        SimpleLiveActivity()
     }
 }

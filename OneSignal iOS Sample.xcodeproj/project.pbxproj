@@ -12,6 +12,12 @@
 		670113BD29E9A70800D01DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670113BC29E9A70800D01DE9 /* Assets.xcassets */; };
 		670113C029E9A70800D01DE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670113BF29E9A70800D01DE9 /* Preview Assets.xcassets */; };
 		670113CD29E9AA8400D01DE9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670113CC29E9AA8400D01DE9 /* NotificationService.swift */; };
+		6708E9722C93464B00022A29 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 6708E9712C93464B00022A29 /* OneSignalExtension */; };
+		6708E9742C93464B00022A29 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 6708E9732C93464B00022A29 /* OneSignalFramework */; };
+		6708E9762C93464B00022A29 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 6708E9752C93464B00022A29 /* OneSignalInAppMessages */; };
+		6708E9782C93464B00022A29 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 6708E9772C93464B00022A29 /* OneSignalLocation */; };
+		6708E97A2C94AE5C00022A29 /* SimpleLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708E9792C94AE5C00022A29 /* SimpleLiveActivity.swift */; };
+		6708E97B2C94AE5C00022A29 /* SimpleLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708E9792C94AE5C00022A29 /* SimpleLiveActivity.swift */; };
 		673A9B662A1C06F9000243D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
 		673A9B672A1C06F9000243D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
 		673A9B6A2A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B692A1C06F9000243D0 /* SampleWidgetExtensionBundle.swift */; };
@@ -21,15 +27,13 @@
 		673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 673A9B6F2A1C06F9000243D0 /* SampleWidgetExtension.intentdefinition */; };
 		675089842A2697E600579634 /* SportsScoreLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675089832A2697E600579634 /* SportsScoreLiveActivity.swift */; };
 		675089852A26986C00579634 /* SportsScoreLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675089832A2697E600579634 /* SportsScoreLiveActivity.swift */; };
-		675CA1C42C1CE00700EA9907 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 675CA1C32C1CE00700EA9907 /* OneSignalExtension */; };
-		675CA1C62C1CE00700EA9907 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 675CA1C52C1CE00700EA9907 /* OneSignalFramework */; };
-		675CA1C82C1CE00700EA9907 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 675CA1C72C1CE00700EA9907 /* OneSignalInAppMessages */; };
-		6779EB1A2B5F5EFE0061F28B /* LiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD52B5E509900821C94 /* LiveActivityLiveActivity.swift */; };
+		6779EB1A2B5F5EFE0061F28B /* FIFALiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD52B5E509900821C94 /* FIFALiveActivity.swift */; };
+		678D862B2C269A2B005F1CB0 /* OSControlBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D862A2C269A2B005F1CB0 /* OSControlBoardViewModel.swift */; };
 		679958692A1C0DAC0006091F /* SampleWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		67DA2FD02B5E509900821C94 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF429F5F81700886064 /* WidgetKit.framework */; };
 		67DA2FD12B5E509900821C94 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67324DF629F5F81700886064 /* SwiftUI.framework */; };
 		67DA2FD42B5E509900821C94 /* LiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD32B5E509900821C94 /* LiveActivityBundle.swift */; };
-		67DA2FD62B5E509900821C94 /* LiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD52B5E509900821C94 /* LiveActivityLiveActivity.swift */; };
+		67DA2FD62B5E509900821C94 /* FIFALiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD52B5E509900821C94 /* FIFALiveActivity.swift */; };
 		67DA2FDA2B5E509900821C94 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA2FD92B5E509900821C94 /* AppIntent.swift */; };
 		67DA2FDC2B5E509A00821C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DA2FDB2B5E509A00821C94 /* Assets.xcassets */; };
 		67DA2FE02B5E509A00821C94 /* LiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 67DA2FCF2B5E509900821C94 /* LiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -83,6 +87,7 @@
 		670113CA29E9AA8400D01DE9 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		670113CC29E9AA8400D01DE9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		670113CE29E9AA8400D01DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6708E9792C94AE5C00022A29 /* SimpleLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLiveActivity.swift; sourceTree = "<group>"; };
 		67324DF429F5F81700886064 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		67324DF629F5F81700886064 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		673A9B652A1C06F9000243D0 /* SampleWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,9 +97,10 @@
 		673A9B702A1C06FA000243D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		673A9B722A1C06FA000243D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		675089832A2697E600579634 /* SportsScoreLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScoreLiveActivity.swift; sourceTree = "<group>"; };
+		678D862A2C269A2B005F1CB0 /* OSControlBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSControlBoardViewModel.swift; sourceTree = "<group>"; };
 		67DA2FCF2B5E509900821C94 /* LiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DA2FD32B5E509900821C94 /* LiveActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityBundle.swift; sourceTree = "<group>"; };
-		67DA2FD52B5E509900821C94 /* LiveActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityLiveActivity.swift; sourceTree = "<group>"; };
+		67DA2FD52B5E509900821C94 /* FIFALiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFALiveActivity.swift; sourceTree = "<group>"; };
 		67DA2FD92B5E509900821C94 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		67DA2FDB2B5E509A00821C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DA2FDD2B5E509A00821C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,8 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				675CA1C82C1CE00700EA9907 /* OneSignalInAppMessages in Frameworks */,
-				675CA1C62C1CE00700EA9907 /* OneSignalFramework in Frameworks */,
+				6708E9762C93464B00022A29 /* OneSignalInAppMessages in Frameworks */,
+				6708E9782C93464B00022A29 /* OneSignalLocation in Frameworks */,
+				6708E9742C93464B00022A29 /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				675CA1C42C1CE00700EA9907 /* OneSignalExtension in Frameworks */,
+				6708E9722C93464B00022A29 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +178,7 @@
 				67E3788E29EDD99200320FC3 /* OneSignal iOS Sample.entitlements */,
 				670113B829E9A70700D01DE9 /* OneSignal_iOS_SampleApp.swift */,
 				670113BA29E9A70700D01DE9 /* OSControlBoardView.swift */,
+				678D862A2C269A2B005F1CB0 /* OSControlBoardViewModel.swift */,
 				670113BC29E9A70800D01DE9 /* Assets.xcassets */,
 				670113BE29E9A70800D01DE9 /* Preview Content */,
 			);
@@ -220,10 +228,11 @@
 			isa = PBXGroup;
 			children = (
 				67DA2FD32B5E509900821C94 /* LiveActivityBundle.swift */,
-				67DA2FD52B5E509900821C94 /* LiveActivityLiveActivity.swift */,
+				67DA2FD52B5E509900821C94 /* FIFALiveActivity.swift */,
 				67DA2FD92B5E509900821C94 /* AppIntent.swift */,
 				67DA2FDB2B5E509A00821C94 /* Assets.xcassets */,
 				67DA2FDD2B5E509A00821C94 /* Info.plist */,
+				6708E9792C94AE5C00022A29 /* SimpleLiveActivity.swift */,
 			);
 			path = LiveActivity;
 			sourceTree = "<group>";
@@ -249,8 +258,9 @@
 			);
 			name = "OneSignal iOS Sample";
 			packageProductDependencies = (
-				675CA1C52C1CE00700EA9907 /* OneSignalFramework */,
-				675CA1C72C1CE00700EA9907 /* OneSignalInAppMessages */,
+				6708E9732C93464B00022A29 /* OneSignalFramework */,
+				6708E9752C93464B00022A29 /* OneSignalInAppMessages */,
+				6708E9772C93464B00022A29 /* OneSignalLocation */,
 			);
 			productName = "OneSignal iOS Sample";
 			productReference = 670113B529E9A70700D01DE9 /* OneSignal iOS Sample.app */;
@@ -270,7 +280,7 @@
 			);
 			name = OneSignalNotificationServiceExtension;
 			packageProductDependencies = (
-				675CA1C32C1CE00700EA9907 /* OneSignalExtension */,
+				6708E9712C93464B00022A29 /* OneSignalExtension */,
 			);
 			productName = OneSignalNotificationServiceExtension;
 			productReference = 670113CA29E9AA8400D01DE9 /* OneSignalNotificationServiceExtension.appex */;
@@ -318,7 +328,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					670113B429E9A70700D01DE9 = {
 						CreatedOnToolsVersion = 14.3;
@@ -344,7 +354,7 @@
 			);
 			mainGroup = 670113AC29E9A70700D01DE9;
 			packageReferences = (
-				675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */,
+				6708E9702C93464B00022A29 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */,
 			);
 			productRefGroup = 670113B629E9A70700D01DE9 /* Products */;
 			projectDirPath = "";
@@ -401,8 +411,10 @@
 				670113BB29E9A70700D01DE9 /* OSControlBoardView.swift in Sources */,
 				673A9B742A1C06FA000243D0 /* SampleWidgetExtension.intentdefinition in Sources */,
 				670113B929E9A70700D01DE9 /* OneSignal_iOS_SampleApp.swift in Sources */,
-				6779EB1A2B5F5EFE0061F28B /* LiveActivityLiveActivity.swift in Sources */,
+				678D862B2C269A2B005F1CB0 /* OSControlBoardViewModel.swift in Sources */,
+				6779EB1A2B5F5EFE0061F28B /* FIFALiveActivity.swift in Sources */,
 				675089842A2697E600579634 /* SportsScoreLiveActivity.swift in Sources */,
+				6708E97A2C94AE5C00022A29 /* SimpleLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +443,8 @@
 			files = (
 				67DA2FD42B5E509900821C94 /* LiveActivityBundle.swift in Sources */,
 				67DA2FDA2B5E509900821C94 /* AppIntent.swift in Sources */,
-				67DA2FD62B5E509900821C94 /* LiveActivityLiveActivity.swift in Sources */,
+				6708E97B2C94AE5C00022A29 /* SimpleLiveActivity.swift in Sources */,
+				67DA2FD62B5E509900821C94 /* FIFALiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -521,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -860,31 +875,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */ = {
+		6708E9702C93464B00022A29 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onesignal/onesignal-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.1;
+				minimumVersion = 5.2.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		675CA1C32C1CE00700EA9907 /* OneSignalExtension */ = {
+		6708E9712C93464B00022A29 /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			package = 6708E9702C93464B00022A29 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
 			productName = OneSignalExtension;
 		};
-		675CA1C52C1CE00700EA9907 /* OneSignalFramework */ = {
+		6708E9732C93464B00022A29 /* OneSignalFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			package = 6708E9702C93464B00022A29 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
 			productName = OneSignalFramework;
 		};
-		675CA1C72C1CE00700EA9907 /* OneSignalInAppMessages */ = {
+		6708E9752C93464B00022A29 /* OneSignalInAppMessages */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 675CA1C22C1CE00700EA9907 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			package = 6708E9702C93464B00022A29 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
 			productName = OneSignalInAppMessages;
+		};
+		6708E9772C93464B00022A29 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6708E9702C93464B00022A29 /* XCRemoteSwiftPackageReference "onesignal-ios-sdk" */;
+			productName = OneSignalLocation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
